@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Formularz rejestracyjny</title>
+    <meta name="description" content="Zarejestruj się">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<h1>Rejestracja</h1>
+<form>
+    <div class="names">
+        <label for="name">Imię</label>
+        <br>
+        <input type="text" id="name" placeholder="Wpisz imię">
+
+    </div>
+    <br>
+    <div class="surnames">
+        <label for="surname">Nazwisko</label>
+        <br>
+        <input type="text" id="surname" placeholder="Wpisz nazwisko">
+    </div>
+
+    <div class="genders">
+        <p class="gender-text">Płeć</p>
+        <div class="gender-options">
+            <label class="gender-option" for="female">
+                <input type="radio" id="female" name="gender"> Kobieta
+            </label>
+            <label class="gender-option" for="male">
+                <input type="radio" id="male" name="gender"> Mężczyzna
+            </label>
+
+        </div>
+    </div>
+
+    <div class="email">
+        <label class="email">Adres email</label>
+        <br>
+        <input type="email" id="email" placeholder="Wpisz adres email">
+    </div>
+
+    <br>
+
+    <div class="password">
+        <label class="password-label" for="pass">Hasło</label>
+        <br>
+        <input type="password" id="pass" placeholder="Hasło">
+        <p class="password-hint">min. 8 znaków</p>
+    </div>
+
+    <div class="address">
+        <div class="field-container">
+            <label for="city">Miasto</label>
+            <br>
+            <input type="text" id="city">
+        </div>
+
+        <div class="field-container">
+        <label for="voivodeship" >Województwo</label>
+            <br>
+        <select id="voivodeship" name="voivodeship">
+            <option value="" disabled selected hidden>Wybierz...</option>
+            <option value="dolnośląskie">Dolnośląskie</option>
+            <option value="kujawsko-pomorskie">Kujawsko-Pomorskie</option>
+            <option value="lubelskie">Lubelskie</option>
+            <option value="lubuskie">Lubuskie</option>
+            <option value="łódzkie">Łódzkie</option>
+            <option value="małopolskie">Małopolskie</option>
+            <option value="mazowieckie">Mazowieckie</option>
+            <option value="opolskie">Opolskie</option>
+            <option value="podkarpackie">Podkarpackie</option>
+            <option value="podlaskie">Podlaskie</option>
+            <option value="pomorskie">Pomorskie</option>
+            <option value="śląskie">Śląskie</option>
+            <option value="świętokrzyskie">Świętokrzyskie</option>
+            <option value="warmińsko-mazurskie">Warmińsko-mazurskie</option>
+            <option value="wielkopolskie">Wielkopolskie</option>
+            <option value="zachodniopomorskie">Zachodniopomorskie</option>
+
+        </select>
+        </div>
+
+        <div class="field-container">
+            <label for="zipcode">Kod pocztowy</label>
+            <br>
+            <input type="text" id="zipcode">
+        </div>
+
+    </div>
+
+    <br>
+    <div class="checkbox-container">
+        <input type="checkbox" id="agreement">
+        <label class="checkbox-label" for="agreement">Akceptuję <a href="https://www.wroclaw.pl/dla-mieszkanca/regulamin">
+            regulamin</a></label>
+    </div>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="marketingConsent" checked>
+        <label class="checkbox-label" for="marketingConsent">Wyrażam zgodę na otrzymywanie informacji marketingowych</label>
+    </div>
+
+    <button>Rejestruj</button>
+</form>
+
 
 </body>
 </html>
